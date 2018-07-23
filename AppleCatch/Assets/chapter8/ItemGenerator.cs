@@ -5,13 +5,14 @@ using UnityEngine;
 public class ItemGenerator : MonoBehaviour {
 
     public GameObject applePrefab;
+    public GameObject gapplePrefab;
     public GameObject bombPrefab;
     float span = 1.0f;
     float delta = 0;
     int ratio = 2;
     float speed = -0.03f;
 
-    public void SetParamator(float span, float speed,int ratio)
+    public void SetParametor(float span, float speed,int ratio)
     {
         this.span = span;
         this.speed = speed;
@@ -34,6 +35,10 @@ public class ItemGenerator : MonoBehaviour {
             if (dice <= this.ratio)
             {
                 item = Instantiate(bombPrefab) as GameObject;
+            }
+            else if(dice <= 4)
+            {
+                item = Instantiate(gapplePrefab) as GameObject;
             }
             else
             {

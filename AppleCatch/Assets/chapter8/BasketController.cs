@@ -24,6 +24,11 @@ public class BasketController : MonoBehaviour {
             this.director.GetComponent<GameDirector>().GetApple();
             this.aud.PlayOneShot(this.appleSE);
         }
+        else if (other.gameObject.tag == "GApple")
+        {
+            this.director.GetComponent<GameDirector>().GetGApple();
+            this.aud.PlayOneShot(this.appleSE);
+        }
         else
         {
             this.director.GetComponent<GameDirector>().GetBomb();

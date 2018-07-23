@@ -1,10 +1,16 @@
 fileFormatVersion: 2
 guid: 480a1be237d38d24d9fe047bf3739a09
-timeCreated: 1531125660
+timeCreated: 1532337141
 licenseType: Pro
 MonoImporter:
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - applePrefab: {fileID: 1968928327699016, guid: 0eb388f02d6056345be9de867db845fc,
+      type: 2}
+  - gapplePrefab: {fileID: 1968928327699016, guid: 252b56997b5c49a449511a3a06a09f24,
+      type: 2}
+  - bombPrefab: {fileID: 1975634948359232, guid: 00e334b7171d2ff4882031bc5387e0dd,
+      type: 2}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
